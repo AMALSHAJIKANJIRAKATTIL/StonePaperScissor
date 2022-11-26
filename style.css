@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+}
+.forminput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap:10px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap:10px;
+    font-size: xx-large;
+}
+
+.start{
+    width:50px
+}
+
+.gamescreen{
+   
+    width: 100%;
+    height:500px;
+    display: none;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.player{
+    border-radius: 9px;
+    /* box-shadow: 5px 10px; */
+    /* background-image: linear-gradient(to bottom right, rgb(0, 38, 255), rgb(0, 0, 0)); */
+    /* background-color: rgb(81, 81, 241); */
+    width: 40%;
+    height:400px;
+    color: rgb(2, 0, 0);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.computer{
+    border-radius: 9px;
+    /* box-shadow: 5px 10px; */
+    /* background-image: linear-gradient(to bottom right, red, rgb(0, 0, 0)); */
+    /* background-color: rgb(245, 87, 87); */
+    width: 40%;
+    height:400px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#playerimage{
+    height: 60%;
+    width: 80%;
+}
+#computerimage{
+    height: 60%;
+    width: 80%;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.buttondiv{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.result{
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.computerscore , .playerscore{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    letter-spacing: 3px;
+}
+
+.button{
+    background-color: rgb(165, 165, 165);
+    color: white;
+    border: none;
+    width: 80px;
+    border-radius: 8px;
+    height: 30px;
+}

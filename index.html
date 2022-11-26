@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link href="./style.css" rel="stylesheet">
+    
+</head>
+<body>
+
+<div class="forminput">
+    <form>
+    <label for='turns' class="turnstext">How many number of turns ?</label>
+    <input required id="turn" name="turns" type="number" min="1" placeholder="Type here">
+    <input type="button" class="start" onclick="startgame();" value="Start">
+    <input type="button" class="restart" onclick="restart();"  disabled value="Re-start">
+
+</form>
+</div>
+
+<h1 class="result"></h1>
+<div class="gamescreen">
+    
+    <div class="player">
+        <H1>PLAYER</H1>
+        <img id="playerimage" alt="Choose an option">
+        <div class="buttondiv" >
+        <button class="Rock button"  onclick="if(totalturns>0){rock();}else{if(computerscore>playerscore){alert('YOU LOST!!---RESTART GAME!!!')}else if(computerscore===playerscore){alert('GAME DRAW!!---RESTART GAME!!!')}else{alert('YOU WON!!!---RESTART GAME!!!')}}; clicked(); ">Rock</button>
+            <button class="Paper button"  onclick="if(totalturns>0){paper();}else{if(computerscore>playerscore){alert('YOU LOST!!---RESTART GAME!!!')}else if(computerscore===playerscore){alert('GAME DRAW!!---RESTART GAME!!!')}else{alert('YOU WON!!!---RESTART GAME!!!')}}; clicked();">Paper</button>
+            <button class="Scissor button" onclick="if(totalturns>0){scissor();}else{if(computerscore>playerscore){alert('YOU LOST!!---RESTART GAME!!!')}else if(computerscore===playerscore){alert('GAME DRAW!!---RESTART GAME!!!')}else{alert('YOU WON!!!---RESTART GAME!!!')}}; clicked();" >Scissor</button>
+        </div>
+        <h3 class="playerscore"></h3>
+    </div>
+    <div class="computer">
+        <H1>COMPUTER</H1>
+        <img id="computerimage" >
+        <h3 class="computerscore"></h3>
+    </div>
+</div>
+
+<script src="./script.js" ></script>
+</body>
+</html>
